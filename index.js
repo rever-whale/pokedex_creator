@@ -51,7 +51,7 @@ rawArray.forEach(text => {
   }
 });
 
-fs.writeFileSync(RESULT_OBJ_FILE_PATH, JSON.stringify(pokedexObj));
-fs.writeFileSync(RESULT_ARR_FILE_PATH, JSON.stringify(pokedexArr));
+fs.writeFileSync(RESULT_OBJ_FILE_PATH, JSON.stringify({ data: pokedexObj }));
+fs.writeFileSync(RESULT_ARR_FILE_PATH, JSON.stringify({ data: pokedexArr }));
 
 console.log(`complete: ${pokedexArr.length} pokemon`);
