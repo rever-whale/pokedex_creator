@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const RAW_FILE_PATH = path.resolve(__dirname, './rawString.json');
-const RESULT_ARR_FILE_PATH = path.resolve(__dirname, './result_arr.json');
-const RESULT_OBJ_FILE_PATH = path.resolve(__dirname, './result_obj.json');
+const RAW_FILE_PATH = path.resolve(__dirname, './raw.json');
+const RESULT_ARR_FILE_PATH = path.resolve(__dirname, './pokedex_ko.list.json');
+const RESULT_OBJ_FILE_PATH = path.resolve(__dirname, './pokedex_ko.json');
 
 const fileData = fs.readFileSync(RAW_FILE_PATH);
 const { raw: rawArray } = JSON.parse(fileData);
